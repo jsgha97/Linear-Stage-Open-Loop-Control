@@ -25,3 +25,16 @@ Half step sequence involves alternating between energizing a single-coil and bot
 
 ![half stepper](https://user-images.githubusercontent.com/92079163/136638927-e39607b1-7b7b-47ec-bf8e-a4702f6e7cd9.PNG)
 
+The final assembly of the homing stage with the stepper motor and respective electronic components are shown below. A button switch was integrated into the linear stage to execute the following homing sequence: 
+1. The user manually presses the switch to begin homing. The carriage moves toward the switch at the speed of 84.RPM (delayMicroseconds of 3500 in full step sequencing).
+2. Once the switch detects contact with the carriage, the carriage will retract 5mm from the switch at 50% reduced speed.
+3. The carriage moves again toward the switch at the speed of 32. RPM (delayMicroseconds of 4500 in half step sequencing). This is to ensure that the carriage moves and detects the switch with higher precision based on the concepts of half stepping.
+4. Once the switch detects contact with the carriage again, the carriage moves 30mm away from the switch at 32. RPM using half stepping.
+5. The motor shuts off and finalizes the homing process.
+
+
+
+<img src= "https://user-images.githubusercontent.com/92079163/136639075-97681a76-9cc7-4d0e-b407-e6152d7cf134.jpeg" width="700" height="550">
+
+
+
