@@ -34,7 +34,7 @@ The final assembly of the homing stage with the stepper motor and respective ele
 
 
 
-<img src= "https://user-images.githubusercontent.com/92079163/136639356-49e85a04-1c11-452c-9a65-5cd12ced1581.jpeg" width="700" height="450">
+<img src= "https://user-images.githubusercontent.com/92079163/136639356-49e85a04-1c11-452c-9a65-5cd12ced1581.jpeg" width="550" height="350">
 
 
 
